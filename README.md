@@ -422,7 +422,7 @@ For setting up the Mosquitto add-on in Home Assistant, see: [home-assistant.io/i
 
 Firmware updates are delivered as `.fwpkg` files that you upload through the web interface.
 
-1. **Download** the latest firmware file (`.fwpkg`) from the [Releases page](https://github.com/Altyor/NodOn-Zigbee-Bridge/releases/tag/v0.72.1)
+1. **Download** the latest firmware file (`.fwpkg`) from the [Releases page](https://github.com/Altyor/NodOn-Zigbee-Bridge/releases)
 2. Open your bridge's web interface (`http://<your-device-ip>`)
 3. Go to **Firmware Update** in the sidebar
 4. Click **Upload** and select the downloaded `.fwpkg` file
