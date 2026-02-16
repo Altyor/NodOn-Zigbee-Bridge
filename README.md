@@ -1,5 +1,12 @@
 # NodOn Zigbee Bridge
 
+> **New Release — NodOn OS v0.72.1**
+>
+> Zigbee2MQTT has been upgraded to **v2.8.0**, along with minor improvements and bug fixes.
+> **[Download firmware update](https://github.com/Altyor/NodOn-Zigbee-Bridge/releases/download/v0.72.1/firmware-0.72.1.fwpkg)** | [Release notes](https://github.com/Altyor/NodOn-Zigbee-Bridge/releases/tag/v0.72.1)
+>
+> See [How to Update Your Bridge](#how-to-update-your-bridge) for installation instructions.
+
 ## Table of Contents
 
 - [What is the NodOn Zigbee Bridge?](#what-is-the-nodon-zigbee-bridge)
@@ -21,6 +28,7 @@
   - [Examples](#examples)
   - [Full Documentation](#full-documentation)
 - [Note for Home Assistant Users](#note-for-home-assistant-users)
+- [How to Update Your Bridge](#how-to-update-your-bridge)
 - [Need Help?](#need-help)
 
 ---
@@ -407,6 +415,20 @@ The NodOn Zigbee Bridge is fully compatible with **Home Assistant** via its MQTT
 Use **External Broker mode** on each bridge, pointing to Home Assistant's Mosquitto add-on. Give each bridge a **unique base topic** (e.g., `zigbee2mqtt-floor1`, `zigbee2mqtt-floor2`). This is recommended because Home Assistant can only connect to a single MQTT broker, and it does not natively handle the topic prefixes used in Multi-Bridge mode.
 
 For setting up the Mosquitto add-on in Home Assistant, see: [home-assistant.io/integrations/mqtt](https://www.home-assistant.io/integrations/mqtt/)
+
+---
+
+## How to Update Your Bridge
+
+Firmware updates are delivered as `.fwpkg` files that you upload through the web interface.
+
+1. **Download** the latest firmware file (`.fwpkg`) from the [Releases page](https://github.com/Altyor/NodOn-Zigbee-Bridge/releases/tag/v0.72.1)
+2. Open your bridge's web interface (`http://<your-device-ip>`)
+3. Go to **Firmware Update** in the sidebar
+4. Click **Upload** and select the downloaded `.fwpkg` file
+5. The bridge will validate, install, and reboot automatically — this takes a few minutes
+
+> **Note:** Do not power off the bridge during the update process.
 
 ---
 
